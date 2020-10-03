@@ -82,6 +82,7 @@ public:
     int i;
     int d,m,y;
     int con;
+    char add[50];
 
 
     float amc;
@@ -96,6 +97,8 @@ public:
         gets(bp);
         cout<<"Destination pt:";
         gets(dest);
+        cout<<"Passenger address:";
+        gets>>add;
         cout<<"No of seats required:";
         cin>>nosr;
         for(i=0; i<nosr ; i++)
@@ -127,6 +130,8 @@ public:
         puts(bp);
         cout<<"Destination pt:";
         puts(dest);
+        cout<<"Address:";
+        puts(add);
         cout<<"No of seats reserved:"<<nosr;
         for(i=0; i<nosr; i++)
         {
